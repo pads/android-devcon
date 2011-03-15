@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">Notifications Demo</string>
+    <string name="toast_button_text">Show Toast Notification</string>
+    <string name="status_bar_button_text">Show Status Bar Notification</string>
+    <string name="dialog_button_text">Show Dialog Notification</string>
+    <string name="clear_notification_text">Clear Status Bar Notification</string>
+</resources>
