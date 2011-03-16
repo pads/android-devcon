@@ -1,6 +1,7 @@
 package com.bt.devcon.android;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -17,6 +18,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity implements OnClickListener {
     
 	private static final int NOTIFICATION_ID = 1;
+	private static final int DIALOG_ID = 2;
 	
 	private NotificationManager notificationManager;
 	private Notification notification;
@@ -54,7 +56,8 @@ public class MainActivity extends Activity implements OnClickListener {
 			}
 			break;
 		case R.id.dialogButton:
-			showDialog();
+			// Built in method to show dialogs.
+			showDialog(DIALOG_ID);
 			break;
 		case R.id.clearNotificationButton:
 			clearStatusBarNotification();
@@ -96,7 +99,14 @@ public class MainActivity extends Activity implements OnClickListener {
 		}
 	}
 	
-	private void showDialog() {
-
+	/* This is called after showDialog() */
+	@Override
+    protected Dialog onCreateDialog(int id) {
+		ProgressDialog dialog = new ProgressDialog(this);
+        dialog.setTitle("Example Progress Dialog");
+        dialog.setMessage("Performing some complicated task...");
+        dialog.setIndeterminate(true);
+        dialog.setCancelable(true);
+        return dialog;	
 	}
 }
