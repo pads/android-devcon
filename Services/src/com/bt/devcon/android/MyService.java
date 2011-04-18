@@ -1,5 +1,7 @@
 package com.bt.devcon.android;
 
+import java.util.Random;
+
 import android.app.IntentService;
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -28,7 +30,7 @@ public class MyService extends IntentService {
 		while(true) {
 			/* This should run in a separate thread as a service
 			 * runs within the application's thread. */
-			doSomeLongTermWork();
+			doSomeLongTermWork();			
 		}
 		// Service would be automatically stopped after this method executes.
 	}
@@ -42,7 +44,7 @@ public class MyService extends IntentService {
 	
 	private void doSomeLongTermWork() {
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(2000);			
 		} catch (InterruptedException e) {}		
 	}
 	
