@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Views Demo</string>
+    <string name="list_name">List View Demo</string>
+    <string name="list_view_button_text">List View</string>
+</resources>
