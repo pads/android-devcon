@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Views Demo</string>
+    <string name="app_name">Layouts and Views Demo</string>
     <string name="list_name">List View Demo</string>
     <string name="list_view_button_text">List View</string>
+    <string name="table_layout_button_text">Table Layout</string>
 </resources>

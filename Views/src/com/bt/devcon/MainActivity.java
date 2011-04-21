@@ -17,4 +17,8 @@ public class MainActivity extends Activity {
 		Intent intent = new Intent(this, MyListActivity.class);				
 		this.startActivity(intent);
 	}
+	
+	public void loadTableLayout(View view) {
+		this.setContentView(R.layout.table_layout);
+	}
 }

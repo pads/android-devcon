@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
   android:layout_width="match_parent"
   android:layout_height="match_parent">
     <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/listViewButton" android:text="@string/list_view_button_text" android:onClick="loadListView"></Button>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tableLayoutButton" android:text="@string/table_layout_button_text" android:onClick="loadTableLayout"></Button>
 </LinearLayout>
