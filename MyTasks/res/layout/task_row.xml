@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+	
+	<TextView android:id="@+id/task_title"
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="16pt"
+		android:paddingTop="10px"
+		android:paddingBottom="10px"    
+	    android:text=""/>
+	<TextView android:id="@+id/task_created"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:paddingTop="0px"
+		android:layout_marginTop="0px"
+		android:textColor="@android:color/secondary_text_dark"
+		android:textStyle="italic"
+		android:text="5 seconds ago, 12:49pm">
+	</TextView>
+</LinearLayout>	    

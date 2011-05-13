@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="pref_sort_keys">
+		<item>sort_due_date_asc</item>
+		<item>sort_due_date_desc</item>
+		<item>sort_created_date_asc</item>
+		<item>sort_created_date_desc</item>
+		<item>sort_title_asc</item>
+	</string-array>	
+	<string-array name="pref_sort_values">
+		<item>Due date (ascending)</item>
+		<item>Due date (descending)</item>
+		<item>Created date (ascending)</item>
+		<item>Created date (descending)</item>
+		<item>Task title</item>
+	</string-array>
+</resources>

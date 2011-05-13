@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<PreferenceCategory android:title="Account details">
+		<EditTextPreference android:title="Username"
+		android:key="pref_username_key"></EditTextPreference>
+
+		<EditTextPreference android:title="Password"
+			android:key="pref_password_key" android:password="true"></EditTextPreference>
+	</PreferenceCategory>
+
+	<CheckBoxPreference android:title="Sign in automatically"
+			android:key="pref_autosignin_key" android:defaultValue="false"></CheckBoxPreference>
+
+	<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="Advanced">
+		<EditTextPreference android:title="Nested preference"
+			android:key="pref_nested_key"></EditTextPreference>
+	</PreferenceScreen>
+</PreferenceScreen>

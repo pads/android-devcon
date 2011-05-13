@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyTasks</string>
+    <string name="no_tasks">There are no tasks to display. Press MENU to add a task.</string>
+    <string name="edit_task_menu">Edit task</string>
+    <string name="delete_task_menu">Delete task</string>
+    <string name="menu_add_task">New task</string>
+    <string name="menu_prefs">Settings</string>
+    <string name="pickDate">Change date</string>
+    <string name="dueDate">Due date:</string>
+    <string name="update">Update</string>
+
+    <string name="pref_display_category">Display</string>
+    <string name="pref_sort_key">pref_sort_key</string>
+    <string name="pref_sort_title">Sort order</string>
+    <string name="pref_sort_summary">Configure how the task list is sorted</string>
+    
+</resources>
