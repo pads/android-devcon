@@ -1,6 +1,7 @@
 package com.bt.devcon.android;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
@@ -13,7 +14,8 @@ public class MyActivity extends Activity {
 							   "resumed", 
 							   "paused", 
 							   "stopped", 
-							   "destroyed"};
+							   "destroyed",
+							   "back pressed"};
 	
 	/* The activity is being created. */
 	@Override
@@ -58,6 +60,18 @@ public class MyActivity extends Activity {
         super.onDestroy();        
         logState(states[5]);
     }
+    // Without this the back button kills an application.
+    @Override
+    public void onBackPressed() {
+       logState(states[6]);
+       // Tells Android to launch the home screen
+       // If we do not fire an intent, nothing happens.
+       Intent setIntent = new Intent(Intent.ACTION_MAIN);
+       setIntent.addCategory(Intent.CATEGORY_HOME);
+       setIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+       startActivity(setIntent);
+    }
+
     
     private void logState(String state) {
     	Log.d("Activities", state);
