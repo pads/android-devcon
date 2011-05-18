@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
+public class MyActivity extends Activity {
 	
 	private TextView activityText;
 	private String[] states = {"created", 

@@ -10,7 +10,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends Activity implements OnClickListener {
+public class TheActivity extends Activity implements OnClickListener {
 
 	private Button startButton, stopButton, startActivityButton, stopActivityButton;
 	private EditText textBox; 
@@ -76,7 +76,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	
 	private class ActivityWorker extends Thread {
 		public void run() {						
-			while(MainActivity.working) {
+			while(TheActivity.working) {
 				textBox.post(new Runnable() {
 					public void run() {
 						textBox.setText("Activity working..." + new Random().nextInt());

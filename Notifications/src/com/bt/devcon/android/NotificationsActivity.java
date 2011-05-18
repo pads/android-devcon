@@ -15,7 +15,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends Activity implements OnClickListener {
+public class NotificationsActivity extends Activity implements OnClickListener {
     
 	private static final int NOTIFICATION_ID = 1;
 	private static final int DIALOG_ID = 2;
@@ -78,7 +78,7 @@ public class MainActivity extends Activity implements OnClickListener {
 													 System.currentTimeMillis());
 		/* You pass a pending intent as part of the notification to tell the notification what to do when it is
 		 * selected in the expanded view.  The intent in this example does nothing. */
-		PendingIntent notificationIntent = PendingIntent.getActivity(this, 0, new Intent(this, MainActivity.class), 0);
+		PendingIntent notificationIntent = PendingIntent.getActivity(this, 0, new Intent(this, NotificationsActivity.class), 0);
 		notification.setLatestEventInfo(getApplicationContext(), "Notification Title", "Notification Expanded Text", 
 										notificationIntent);
 		
@@ -86,7 +86,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	}
 	
 	private void updateStatusBarNotification() {
-		PendingIntent notificationIntent = PendingIntent.getActivity(this, 0, new Intent(this, MainActivity.class), 0);
+		PendingIntent notificationIntent = PendingIntent.getActivity(this, 0, new Intent(this, NotificationsActivity.class), 0);
 		notification.setLatestEventInfo(getApplicationContext(), "Title Updated", "Content updated", notificationIntent);
 		// Append notification options - this is the default system sound.  You can also add vibrate and light options.
 		notification.defaults |= Notification.DEFAULT_SOUND;			
