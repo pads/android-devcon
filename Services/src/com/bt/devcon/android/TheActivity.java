@@ -5,6 +5,7 @@ import java.util.Random;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -40,12 +41,21 @@ public class TheActivity extends Activity implements OnClickListener {
         
         textBox = (EditText)this.findViewById(R.id.textBox);
     }
+    
+    @Override
+    public void onPause() {
+    	super.onPause();
+    	working = false;
+		stopActivityButton.setEnabled(false);
+		startActivityButton.setEnabled(true);
+		textBox.setText(R.string.text_box_text);
+    }
 
 	@Override
 	public void onClick(View view) {
 		switch(view.getId()) {
 		case R.id.startButton:
-			startService(serviceIntent);
+			startService(serviceIntent);			
 			startButton.setEnabled(false);
 			startButton.setText("Service Started");
 			stopButton.setEnabled(true);
@@ -79,7 +89,9 @@ public class TheActivity extends Activity implements OnClickListener {
 			while(TheActivity.working) {
 				textBox.post(new Runnable() {
 					public void run() {
-						textBox.setText("Activity working..." + new Random().nextInt());
+						int random = new Random().nextInt();
+						textBox.setText("Activity working..." + random);
+						Log.d("Services", "Random number in activity: " + String.valueOf(random));
 					}
 				});							
 				try {
