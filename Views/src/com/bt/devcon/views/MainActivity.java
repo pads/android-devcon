@@ -1,4 +1,4 @@
-package com.bt.devcon;
+package com.bt.devcon.views;
 
 import android.app.Activity;
 import android.content.Intent;

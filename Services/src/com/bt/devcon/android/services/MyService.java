@@ -1,4 +1,4 @@
-package com.bt.devcon.android;
+package com.bt.devcon.android.services;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package com.bt.devcon.android;
+package com.bt.devcon.android.activities;
 
 import android.app.Activity;
 import android.content.Intent;
