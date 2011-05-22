@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Intents Demo</string>
+    <string name="next_screen_label">Continuing the Intents Demo</string>
+    <string name="next_button_text">Next Screen</string>
+    <string name="first_screen_text">This is the first screen</string>
+    <string name="previous_button_text">Previous Screen</string>
+    <string name="data_text">Enter some text here</string>
+    <string name="next_screen_text">Received data:</string>
+    <string name="dial_button_text">Dial Number</string>
+    <string name="dial_text">Enter a phone number</string>
+    <string name="no_action_text">Invalid Action</string>
+</resources>

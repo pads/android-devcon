@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    >
+    
+    <Button android:layout_width="wrap_content" 
+        android:text="@string/next_button_text" 
+        android:id="@+id/next_button" 
+        android:layout_height="wrap_content"></Button>
+        
+    <EditText android:layout_width="match_parent" 
+        android:text="@string/data_text" 
+        android:id="@+id/data_text_box" 
+        android:layout_height="wrap_content"></EditText>
+        
+    <Button android:layout_width="wrap_content" 
+        android:text="@string/dial_button_text" 
+        android:id="@+id/dial_button" 
+        android:layout_height="wrap_content"></Button>
+    
+    <EditText android:layout_width="match_parent" 
+        android:text="@string/dial_text" 
+        android:id="@+id/dial_text_box" 
+        android:layout_height="wrap_content"></EditText>
+        
+    <Button android:layout_width="wrap_content" 
+        android:text="@string/no_action_text" 
+        android:id="@+id/no_action_button" 
+        android:layout_height="wrap_content"></Button>
+        
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    >
+    
+    <Button android:layout_width="wrap_content" 
+        android:text="@string/previous_button_text" 
+        android:id="@+id/previous_button" 
+        android:layout_height="wrap_content"></Button>
+        
+    <TextView android:id="@+id/data_text_view"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:paddingBottom="5dip"
+        android:text="@string/next_screen_text"/>
+        
+</LinearLayout>
