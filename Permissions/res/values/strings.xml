@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+    <string name="app_name">Permissions Demo</string>
+    <string name="web_url">http://www.xkcd.com</string>
+    <string name="permission_label">Power of the internetz!</string>
+    <string name="permission_desc">A webcomic of romance,
+		sarcasm, math, and language.</string>
+</resources>
