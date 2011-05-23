@@ -10,4 +10,6 @@
     <string name="dial_button_text">Dial Number</string>
     <string name="dial_text">Enter a phone number</string>
     <string name="no_action_text">Invalid Action</string>
+    <string name="search_label">Internetz Search</string>
+    <string name="search_text">404 Not Found</string>
 </resources>

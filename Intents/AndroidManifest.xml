@@ -19,7 +19,17 @@
         <!-- This activity has no filter so it can only be run from explicit code calls -->
         <activity android:name=".NextActivity"
                   android:label="@string/next_screen_label">
-        </activity>      
+        </activity>
+        
+        <activity android:name=".WebSearchActivity"
+                  android:label="@string/search_label">
+            <intent-filter>
+                <!-- When a web search is run, this activity can take control if the user wants -->
+                <action android:name="android.intent.action.WEB_SEARCH" />
+                <!-- Specifies this activity is a candidate for the default application in web searching -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>       
 
     </application>
 </manifest>
